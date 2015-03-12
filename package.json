@@ -1,0 +1,17 @@
+{
+  "name": "redis-tile-store",
+  "version": "1.0.0",
+  "description": "A redis store for express-tile-cache",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "redis",
+    "tile",
+    "store",
+    "cache"
+  ],
+  "author": "Christian Gastrell",
+  "license": "MIT"
+}

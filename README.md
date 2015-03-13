@@ -1,7 +1,3 @@
----
-layout: default
----
-
 ## redis-tile-store
  
 A module to extend [express-tile-cache](https://github.com/CGastrell/express-tile-cache) memory cache to use Redis. 

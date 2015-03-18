@@ -25,8 +25,11 @@ Create a new instance of the storage object with S3 configuration and assign it 
       redisTileStore = require("redis-tile-store"),
       app = express();
 
-    var redisStore = redisTileStore();
-
+    var redisStore = redisTileStore({
+      port: 6379,
+      host: "redis-url-here",
+      prefix: "tiles" //should you need one
+    })
     var argenmaptiles = {
       urlTemplate: "http://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0",
       store: redisStore

@@ -79,7 +79,7 @@ The **redis-tile-store** module returns a function.
 
 The MIT License (MIT)
 
-Copyright (c) 2014, 2015 Shovel apps, Inc.
+Copyright (c) 2015 Christian Gastrell &lt;cgastrell@gmail.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

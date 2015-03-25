@@ -25,8 +25,11 @@ Create a new instance of the storage object with S3 configuration and assign it 
       redisTileStore = require("redis-tile-store"),
       app = express();
 
-    var redisStore = redisTileStore();
-
+    var redisStore = redisTileStore({
+      port: 6379,
+      host: "redis-url-here",
+      prefix: "tiles" //should you need one
+    })
     var argenmaptiles = {
       urlTemplate: "http://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0",
       store: redisStore
@@ -76,7 +79,7 @@ The **redis-tile-store** module returns a function.
 
 The MIT License (MIT)
 
-Copyright (c) 2014, 2015 Shovel apps, Inc.
+Copyright (c) 2015 Christian Gastrell &lt;cgastrell@gmail.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -10,7 +10,7 @@ A module to extend [express-tile-cache](https://github.com/CGastrell/express-til
     
     var redisTileStore = require("redis-tile-store");
 
-
+It also supports key pairs expiring, disabled by default. Invoke `setTtl(###)` to enable.
 
 ## Installation 
 
@@ -74,6 +74,17 @@ The **redis-tile-store** module returns a function.
   * Key: 'filename.ext',
   * ETag: 'bf2acbedf84207d696c8da7dbb205b9f-5'
 
+#### redis-tile-store.setTtl(minutes)
+
+Enables TTL and sets expiring time. Calling this method enables TTL usage, off by default.
+
+  * `minutes` *{Number}*: minutes the key pair kept alive
+
+# Changelog
+
+### 1.1.0
+
+  * Implementation of SETEX command, setting TTL enables key pairs expire
 
 #License 
 

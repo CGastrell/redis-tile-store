@@ -82,9 +82,13 @@ Enables TTL and sets expiring time. Calling this method enables TTL usage, off b
 
 # Changelog
 
-### 1.1.0
+### 1.1.1
 
-  * Implementation of SETEX command, setting TTL enables key pairs expire
+  * Added setTtl method for setting and enabling key pairs expiring
+
+### 1.1.0-beta
+
+  * Use of SETEX command, setting TTL enables key pairs expire
 
 #License 
 

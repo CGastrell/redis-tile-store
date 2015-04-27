@@ -38,9 +38,12 @@ Create a new instance of the storage object with S3 configuration and assign it 
     app.use(tilecache(argenmaptiles));
 
 
-## Inner workings
+## Options
 
-Uses [AWS-SDK](https://www.npmjs.com/package/aws-sdk) to instance S3 object and upload. You need to have access to an AWS account and have a configured and working S3 bucket.
+  * `ttl` *{Number}*: optional - **seconds** to keep cache valid for *each* tile. Defaults to 10 days (864000 seconds)
+  * `port`
+  * `host`
+  * `prefix`
 
 
 ## API

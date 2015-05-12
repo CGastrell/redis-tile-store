@@ -85,6 +85,11 @@ Enables TTL and sets expiring time. Calling this method enables TTL usage, off b
 
 # Changelog
 
+### 1.2.0
+
+  * Bugfixing
+  * TTL now in seconds
+
 ### 1.1.1
 
   * Added setTtl method for setting and enabling key pairs expiring

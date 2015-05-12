@@ -38,9 +38,12 @@ Create a new instance of the storage object with S3 configuration and assign it 
     app.use(tilecache(argenmaptiles));
 
 
-## Inner workings
+## Options
 
-Uses [AWS-SDK](https://www.npmjs.com/package/aws-sdk) to instance S3 object and upload. You need to have access to an AWS account and have a configured and working S3 bucket.
+  * `ttl` *{Number}*: optional - **seconds** to keep cache valid for *each* tile. Defaults to 10 days (864000 seconds)
+  * `port`
+  * `host`
+  * `prefix`
 
 
 ## API
@@ -82,9 +85,18 @@ Enables TTL and sets expiring time. Calling this method enables TTL usage, off b
 
 # Changelog
 
-### 1.1.0
+### 1.2.0
 
-  * Implementation of SETEX command, setting TTL enables key pairs expire
+  * Bugfixing
+  * TTL now in seconds
+
+### 1.1.1
+
+  * Added setTtl method for setting and enabling key pairs expiring
+
+### 1.1.0-beta
+
+  * Use of SETEX command, setting TTL enables key pairs expire
 
 #License 
 
